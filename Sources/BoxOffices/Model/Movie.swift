@@ -9,7 +9,7 @@ import Foundation
 
 // 외부에서 써야하므로 public
 /// 영화 정보를 나타내는 구조체
-public struct Movie: Decodable {
+public struct Movie: Decodable, Sendable {
     public let rank: String
     public let code: String
     public let name: String
