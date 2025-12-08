@@ -42,10 +42,10 @@ public class BoxOffices {
     ///     // 에러 처리
     /// }
     /// ```
-    public func fetchDailyTop10() async -> Result<[Movie], Error> {
+    public func fetchDailyTop10() async throws -> [Movie] {
         // Yesterday
         guard let yesterday = Date().yesterday else {
-            return .failure(BoxOfficeError.recentDateIsInvalid)
+            throw BoxOfficeError.recentDateIsInvalid
         }
         
         // 날짜 형식: yyyymmdd
@@ -54,14 +54,10 @@ public class BoxOffices {
         let targetDate = dateFormatter.string(from: yesterday)
         
         // API 요청 & 응답
-        do {
-            let response: BoxOfficeResponse = try await apiClient.fetch(path: "boxoffice/searchDailyBoxOfficeList.json",
-                                                                        hTTPMethod: .get, queryItems: [URLQueryItem(name: "targetDt",
-                                                                                                                    value: targetDate)]
-            )
-            return .success(response.boxOfficeResult.dailyBoxOfficeList)
-        } catch {
-            return .failure(error)
-        }
+        let response: BoxOfficeResponse = try await apiClient.fetch(path: "boxoffice/searchDailyBoxOfficeList.json",
+                                                                    hTTPMethod: .get, queryItems: [URLQueryItem(name: "targetDt",
+                                                                                                                value: targetDate)]
+        )
+        return response.boxOfficeResult.dailyBoxOfficeList
     }
 }

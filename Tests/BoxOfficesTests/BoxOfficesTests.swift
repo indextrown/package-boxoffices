@@ -13,11 +13,10 @@ final class BoxOfficesTests: XCTestCase {
     
     func test_fetchDailyTop10() async throws {
         let boxOffices = BoxOffices(key: "91c037fce2fcb7481f8b8022c4bdc25a")
-        let result = await boxOffices.fetchDailyTop10()
+        let result = try await boxOffices.fetchDailyTop10()
         
         // 성공 값
-        let topMovies = try result.get()
+        let topMovies = result
         XCTAssertEqual(topMovies.count, 10)
     }
 }
- 
