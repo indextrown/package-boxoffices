@@ -1,4 +1,0 @@
-Target dependency graph (2 targets)
-Target 'BoxOffices' in project 'BoxOffices'
-➜ Explicit dependency on target 'BoxOffices' in project 'BoxOffices'
-Target 'BoxOffices' in project 'BoxOffices' (no dependencies)
