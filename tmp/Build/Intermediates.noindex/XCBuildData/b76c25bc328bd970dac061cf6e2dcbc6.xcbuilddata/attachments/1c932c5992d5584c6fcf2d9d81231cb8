@@ -1,0 +1,9 @@
+/Users/kimdonghyeon/2025/개발/Library/BoxOffices/Sources/BoxOffices/BoxOffices.swift
+/Users/kimdonghyeon/2025/개발/Library/BoxOffices/Sources/BoxOffices/Errors/APIError.swift
+/Users/kimdonghyeon/2025/개발/Library/BoxOffices/Sources/BoxOffices/Errors/BoxOfficeError.swift
+/Users/kimdonghyeon/2025/개발/Library/BoxOffices/Sources/BoxOffices/Extensions/Date.BoxOffices.swift
+/Users/kimdonghyeon/2025/개발/Library/BoxOffices/Sources/BoxOffices/Extensions/URLRequest.BoxOffices.swift
+/Users/kimdonghyeon/2025/개발/Library/BoxOffices/Sources/BoxOffices/Model/Movie.swift
+/Users/kimdonghyeon/2025/개발/Library/BoxOffices/Sources/BoxOffices/Network/APIClient.swift
+/Users/kimdonghyeon/2025/개발/Library/BoxOffices/Sources/BoxOffices/Network/HTTPMethod.swift
+/Users/kimdonghyeon/2025/개발/Library/BoxOffices/Sources/BoxOffices/Network/Response.swift

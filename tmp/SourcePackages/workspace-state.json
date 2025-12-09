@@ -1,0 +1,47 @@
+{
+  "object" : {
+    "artifacts" : [
+
+    ],
+    "dependencies" : [
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "swift-docc-plugin",
+          "kind" : "remoteSourceControl",
+          "location" : "https://github.com/apple/swift-docc-plugin",
+          "name" : "SwiftDocCPlugin"
+        },
+        "state" : {
+          "checkoutState" : {
+            "branch" : "main",
+            "revision" : "7935a77059e00713a088edf37e2a3485f87398ad"
+          },
+          "name" : "sourceControlCheckout"
+        },
+        "subpath" : "swift-docc-plugin"
+      },
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "swift-docc-symbolkit",
+          "kind" : "remoteSourceControl",
+          "location" : "https://github.com/swiftlang/swift-docc-symbolkit",
+          "name" : "SymbolKit"
+        },
+        "state" : {
+          "checkoutState" : {
+            "revision" : "b45d1f2ed151d057b54504d653e0da5552844e34",
+            "version" : "1.0.0"
+          },
+          "name" : "sourceControlCheckout"
+        },
+        "subpath" : "swift-docc-symbolkit"
+      }
+    ],
+    "prebuilts" : [
+
+    ]
+  },
+  "version" : 7
+}
